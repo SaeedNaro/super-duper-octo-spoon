@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        what is id attribute? : we use id to apply css style or access the elements in js. id should be unique
+        what is class attribute?: group elements (elements is whatever is in the open and closing tag)
+        -->
+    <!--
+        HTML Semantic Tags
+            These are elements which describe the job they do
+                e.g. <form>, <table>, <article>, <header>, <footer>
+        -->
+        <header style="background-color: brown">
+            <h1>JUST IT Bootcamp</h1>
+        </header>
+        <nav style="background-color: yellowgreen">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    <!--
+        create three articles having title and a paragraph explanation
+        -->
+    
+        <h1>Computer Components</h1>
+            <article>
+                <h2>CPU</h2>
+                <p>A central processing unit —also called a central processor or main processor—is the most important processor in a given computer. Its electronic circuitry executes instructions of a computer program, such as arithmetic, logic, controlling, and input/output (I/O) operations. </p>
+            </article>
+
+            <article>
+                <h2>GPU</h2>
+                <p>A graphics processing unit is a specialized electronic circuit initially designed to accelerate computer graphics and image processing (either on a video card or embedded on motherboards, mobile phones, personal computers, workstations, and game consoles).</p>
+            </article>
+
+            <article>
+                <h2>RAM</h2>
+                <p>Random-access memory is a form of electronic computer memory that can be read and changed in any order, typically used to store working data and machine code. A random-access memory device allows data items to be read or written in almost the same amount of time irrespective of the physical location of data inside the memory, in contrast with other direct-access data storage media</p>
+            </article>
+        <!--
+        HTML Forms
+        a form uses the <form> tag (semantic tag:)) 
+        for each row of the form two lines of code are needed using <label> and <input>
+
+        <label> will be the text describing the box e.g. 
+        -->
+
+        <form action = "day2.html"> <!-- the page we want to act on the action -->
+            <label for="name">First Name:</label>
+            <input type="text" 
+                id="name"
+                placeholder="Type First Name"/></br>
+
+            <label for="1name">Password:</label>
+            <input type="password" 
+                name="" 
+                id="Password" 
+                placeholder="Type Password"></br>
+
+            <label for="">Email</label>
+                <input type="email"
+                placeholder="Please Enter Email"></br>
+
+            <label for="">Gender</label>
+                <input type="radio" name="gender"/> <label for="">Male</label>
+                <input type="radio" name="gender"/> <label for="">Female</label>
+                <input type="radio" name="gender"/> <label for="">Prefer to not say</label></br>
+
+            <label for="">Date</label>
+                <input type="date"></br>
+
+            <input type="submit" value="Sign Up">
+
+
+        </form>
+            <fieldset>
+                <legend>Login Form</legend>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name"/>
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required/>
+                    </div>
+
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password"/>
+                    </div>
+
+                    <div>
+                        <input type="submit" name="" value="Login"/>
+                        <input type="reset" name="" id="" value="Clear All"/> 
+                    </div>
+            </fieldset>
+        </form>
+
+        <!--
+        textarea
+        dropdown list 
+        -->
+
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <label for="">Choose Country</label>
+    <select name="" id="">
+        <option value="UK">United Kingdom</option>
+        <option value="Germany">Germany</option>
+        <option value="United States">United States</option>
+    </select>
+    <select name="" id="" multiple="10">
+        <!--
+        how to group dropdown list 
+        -->
+        <optgroup label="European Countries">
+            <option value="">Germany</option>
+            <option value="">UK</option>
+        </optgroup>
+        <optgroup label="Asian Countries">
+            <option value="">India</option>
+            <option value="">Afghanistan</option>
+        </optgroup>
+
+
+    </select>
+
+    
+</body>
+</html>
